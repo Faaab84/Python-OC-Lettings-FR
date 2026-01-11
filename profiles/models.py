@@ -18,5 +18,3 @@ class Profile(models.Model):
             str: Username of the linked user.
         """
         return self.user.username
-
-    

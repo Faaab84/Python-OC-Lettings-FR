@@ -3,6 +3,7 @@
 venv
 .coverage
 venv/
+.env
 staticfiles/
 reports/
 .pytest_cache/

@@ -5,7 +5,6 @@ venv
 venv/
 staticfiles/
 reports/
-.github/
 .pytest_cache/
 Dockerfile1
 docker-compose.yml.old

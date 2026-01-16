@@ -7,4 +7,5 @@ staticfiles/
 reports/
 .pytest_cache/
 Dockerfile1
+Dockerfile1
 docker-compose.yml.old

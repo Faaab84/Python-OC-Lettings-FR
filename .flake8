@@ -5,6 +5,7 @@ exclude =
     .git,
     __pycache__,
     venv\,
+    .github\
     .pytest_cache\
     *.pyc,
     .env\,

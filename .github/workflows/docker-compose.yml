@@ -60,6 +60,7 @@ jobs:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: |
           docker build . --file Dockerfile \
+          --build-arg SECRET_KEY="${SECRET_KEY}" \
           --tag ${{ secrets.DOCKERHUB_USERNAME }}/oc-lettings-site:${{ github.sha }} \
           --tag ${{ secrets.DOCKERHUB_USERNAME }}/oc-lettings-site:latest
 

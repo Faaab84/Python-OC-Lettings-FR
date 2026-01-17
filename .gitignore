@@ -10,3 +10,4 @@ reports/
 Dockerfile1
 Dockerfile1
 docker-compose.yml.old
+compose.yml

@@ -9,8 +9,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 ARG SECRET_KEY
 ENV SECRET_KEY=${SECRET_KEY}
-ARG SENTRY_DSN
-ENV SENTRY_DSN=${SENTRY_DSN}
+
 COPY . .
 
 RUN python manage.py collectstatic --noinput

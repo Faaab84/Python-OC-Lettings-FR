@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-ARG SECRET_KEY
+ARG SECRET_KEY="temporary-insecure-key-for-local-build-only-do-not-use-in-production"
 ENV SECRET_KEY=${SECRET_KEY}
 
 COPY . .

@@ -158,9 +158,11 @@ if SENTRY_DSN:
 
 logger = logging.getLogger(__name__)
 
-logger.info("Sentry initialisé avec DSN : %s", sentry_sdk.Hub.current.client.dsn)
-sentry_sdk.capture_message("Sentry test d'initialisation", level="info")
-
+if sentry_sdk.Hub.current.client is not None:
+    logger.info("Sentry initialisé avec DSN : %s", sentry_sdk.Hub.current.client.dsn)
+    sentry_sdk.capture_message("Sentry test d'initialisation", level="info")
+else:
+    logger.debug("Sentry non initialisé (aucun DSN valide fourni)")
 STORAGES = {
 
     "staticfiles": {

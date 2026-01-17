@@ -56,6 +56,8 @@ jobs:
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Build the Docker image
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: |
           docker build . --file Dockerfile \
           --tag ${{ secrets.DOCKERHUB_USERNAME }}/oc-lettings-site:${{ github.sha }} \

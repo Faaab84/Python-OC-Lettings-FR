@@ -5,8 +5,8 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'oc_lettings_site.settings'
 
-import django  # noqa: E402
-django.setup()
+#import django  # noqa: E402
+#django.setup()
 
 # Configuration file for the Sphinx documentation builder.
 #

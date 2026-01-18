@@ -18,14 +18,9 @@ Pour les instructions d'installation et de déploiement, consultez le
 README du projet sur GitHub <https://github.com/Faaab84/Python-OC-Lettings-FR>_.
 
 
-.. .. toctree::
-..    :maxdepth: 2
-..    :caption: Contents:
-
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Table des matières
 
    installation
    technologies
@@ -33,7 +28,14 @@ README du projet sur GitHub <https://github.com/Faaab84/Python-OC-Lettings-FR>_.
    usage
    ci_cd_architecture
    api_reference
+   about
 
+Indices
+=======
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
 About
 -----
 

@@ -12,6 +12,9 @@ ENV SECRET_KEY=${SECRET_KEY}
 
 COPY . .
 
+RUN python manage.py makemigrations --noinput && \
+    python manage.py migrate --noinput
+
 RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000

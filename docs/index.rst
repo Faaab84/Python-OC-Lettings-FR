@@ -32,6 +32,7 @@ README du projet sur GitHub <https://github.com/Faaab84/Python-OC-Lettings-FR>_.
    database
    usage
    ci_cd_architecture
+   api_reference
 
 About
 -----

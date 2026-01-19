@@ -8,15 +8,6 @@ Quick Start - Local Development
 
 For experienced developers:
 
-.. code-block:: bash
-
-   git clone https://github.com/Faaab84/Python-OC-Lettings-FR
-   python -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-
-
-
     Les variables d'environnement suivantes peuvent être configurées pour modifier le comportement du projet en local :
     Créer un fichier .env avec les informations :
 
@@ -25,7 +16,12 @@ For experienced developers:
   `SENTRY_DSN=<votre_dsn_sentry>` : DSN pour Sentry. Par défaut, aucune valeur n'est définie.
   `ALLOWED_HOSTS=<"">` :ALLOWED_HOSTS (127.0.0.1,localhost,0.0.0.0,oc-lettings-site-latest-05t2.onrender.com)
 
+.. code-block:: bash
 
+   git clone https://github.com/Faaab84/Python-OC-Lettings-FR
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    python manage.py runserver
 
 The application will be available at http://127.0.0.1:8000/

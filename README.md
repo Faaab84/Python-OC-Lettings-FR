@@ -1,8 +1,10 @@
 # Site web d'Orange County Lettings
 
+
 Ce repository contient le code source du site web d'Orange County Lettings, un site de location immobilière fictif développé dans le cadre du parcours "Développeur d'application - Python" d'OpenClassrooms.
 
 Ce site web permet aux utilisateurs de consulter des profils de propriétaires et des annonces de locations immobilières. Il est construit avec le framework web Django et utilise une base de données SQLite pour stocker les informations.
+
 
 ## Architecture du projet
 
